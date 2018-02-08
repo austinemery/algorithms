@@ -1,0 +1,21 @@
+Austin Emery
+Algorithms
+Homework 3
+10/3/2017
+
+1) 	a) See modifiedBubble.c to run.
+
+	b) There were 65 comparisons.
+
+2)	a) The worst case would be n, because if one of the edges was selected and the array was 	 already sorted, it would take quicksort n length to finish that run.
+	
+	b) The best case would be 1, because if the random selection is in the middle, it would be done.
+
+3.	If the objective was just to scan through the array, then yes we can implement binary		search to reduce the time by half to n log(n). But there is a piece of code in there that	 I think would not work with binary search "A[i + 1] = A[i]". 
+
+4.	Start:	14	40	31	28	3	15	17	51
+	Split:	14	40	|31	28	|3	15	|17	51
+	Split:	14	|40	|31	|28	|3	|15	|17	|51
+	Merge:	14	40	|28	31	|3	15	|17	51
+	Merge:	14	28	31	40	|3	15	17	51
+	Done:	3	14	15	17	28	31	40	51

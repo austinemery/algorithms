@@ -1,0 +1,19 @@
+Austin Emery
+Algorithms
+Homework 6
+11/21/17
+
+1. 1 supercomputer, unlmited PCs. n distinct jobs J_1, J_2, J_n. Each job has 2 stages, preprocess on supercomputer, finished on one of the PCs. Job J_i needs p_i time on supercomputer and f_i time on a PC. Let’s say that a schedule is an ordering of the jobs for the supercomputer, and the completion  time of the schedule is the earliest time at which all jobs will have finished processing on the PCs. This is an important quantity to minimize, since it determines how rapidly El Goog can generate a new index. Give a polynomial-time algorithm that finds a schedule with as small a completion time as possible. 
+
+struct Job
+	
+	int supercomputerTime;
+	int PCTime;
+
+main
+
+	Job[numbJobs];
+
+	for i to numbJobs
+
+		
